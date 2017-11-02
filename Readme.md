@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Julia Voropai](https://up.htmlacademy.ru/htmlcss/19/user/545405).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Болтян] (https://htmlacademy.ru/profile/id83202).
 
 ---
 
