@@ -8,7 +8,7 @@
 <header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
-				<img src="img/index-logo.svg" alt="Логотип магазина «Gllacy Shop»">
+				<img src="img/logo.svg" alt="Логотип магазина «Gllacy Shop»">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="ctlg.html">Каталог</a>
@@ -35,24 +35,38 @@
 			</p>
 		</nav>
 	</header>
-	<main>
+	<main class="container">
 		<h1 class="visually-hidden">Магазин мороженого «Gllacy Shop»</h1>
 		<section class="offers">
 			<h2 class="visually-hidden">Горячие предложения</h2>
-			<p>Крем-брюле и пломбир<br>с малиновым джемом</p>
-			<img src="twoice-cream.svg" alt="Фото мороженок">
-			<a class="button" href="shopping-cart.html">Давайте оба!</a>
-			<span class="visually-hidden"></span>
+			<div>
+				<p>Крем-брюле и пломбир с малиновым джемом</p>
+			    <img src="img/one_ice-cream.png" alt="Фото мороженок">
+			    <a class="button" href="shopping-cart.html">Давайте оба!</a>
+			</div>
+			<div>
+				<p>Шоколадний пломбир и лимонный сорбет</p>
+			    <img src="img/two_ice-cream.png" alt="Фото мороженок">
+			    <a class="button" href="shopping-cart.html">Давайте оба!</a>
+			</div>
+			<div>
+				<p>Пломбир с помадкой и клубничный щербет</p>
+			    <img src="img/tree_ice-cream.png" alt="Фото мороженок">
+			    <a class="button" href="shopping-cart.html">Давайте оба!</a>
+			</div>
+			<span class="slider"></span>
 		</section>
 		<section class="promotions">
 			<h2 class="visually-hidden">Акции</h2>
 			<div class="banner1">
 			    <h3 class="heading_banner">Малинка даром!</h3>
+			    <img src="img/banner1.jpg" alt="Фото малинки">
 			    <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 			    <a class="button" href="catalog.html">Хочу варенье!</a>
 			</div>
 			<div class="banner2">
 			    <h3 class="heading_banner">Шоколадки даром!</h3>
+			    <img src="img/banner2.jpg" alt="Фото шоколадок">
 			    <p>При покупкaе 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 				<a class="button" href="catalog.html">Хочу шоколадки!</a>
 			</div>
@@ -60,24 +74,24 @@
 		<section class="product_cards">
 			<h2 class="visually-hidden">Карточки товара</h2>
 			<div>
-			    <h3>310р<span class="weight">/кг</span></h3>
+			    <h3>310<span class="ruble">руб.<span class="weight">/кг</span></h3>
 			    <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-			    <img src="orange_ice-cream.svg" alt="Фото апельсиновой мороженки">
+			    <img src="img/orange_ice-cream.jpg" alt="Фото апельсиновой мороженки">
 			</div>
 			<div>
-				<h3>380р<span class="weight">/кг</span></h3>
+				<h3>380<span class="ruble">руб.<span class="weight">/кг</span></h3>
 			    <p>Сливочно-кофейное с кусочками шоколада</p>
-			    <img src="coffee_ice-cream.svg" alt="Фото кофейной мороженки">
+			    <img src="img/coffee_ice-cream.jpg" alt="Фото кофейной мороженки">
 			</div>
 			<div>
-				<h3>355р<span class="weight">/кг</span></h3>
+				<h3>355<span class="ruble">руб.<span class="weight">/кг</span></h3>
 			    <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-			    <img src="Strawberry_ice-cream.svg" alt="Фото клубничной мороженки">
+			    <img src="img/strawberry_ice-cream.jpg" alt="Фото клубничной мороженки">
 			</div>
 			<div>
-				<h3>415р<span class="weight">/кг</span></h3>
+				<h3>415<span class="ruble">руб.<span class="weight">/кг</span></h3>
 			    <p>Сливочное крем-брюле с карамельной подливкой</p>
-			    <img src="creme-brulee_ice-cream.svg" alt="Фото мороженки крем-брюле">
+			    <img src="img/creme-brulee_ice-cream.jpg" alt="Фото мороженки крем-брюле">
 			</div>	
 		</section>
 		<section class="about_us">
@@ -111,6 +125,7 @@
 			</form>
 			<section class="contact_information">
 				<h2 class="visually-hidden">Контактная информация</h2>
+				<img src="img/map.png" alt="Карта офиса по адресу улица Большая Конюшенная 19/8">
 				<div class="contacts">
 					<p>Адрес главного офиса<br>
 						и офлайн-магазина:<br>
@@ -162,9 +177,10 @@
 				<li>Экологические стандарты</li>
 			</ul>	
 		</div>
-		<p class="made-in">
-			Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
-		</p>
+		<div class="made-in">
+			<img src="logo-htmlacademy-small1.svg" alt="Логотип htmlacademy">
+		    <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
+		</div>
 	</footer>
   </body>
 </html>
