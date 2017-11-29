@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 <header class="main-header">
@@ -11,9 +13,14 @@
 				<img src="img/logo.svg" alt="Логотип магазина «Gllacy Shop»">
 			</a>
 			<ul class="site-navigation">
-				<li><a href="catalog.html">Каталог</a>
-					<ul class="dropdown">
-						<li><a class="novelties" href="novelties.html"><strong>Новинки</strong><hr></a></li>
+				<li>
+					<a href="#" class="dropdown">Каталог</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a class="novelties" href="novelties.html">
+								<strong>Новинки</strong>
+							</a>
+						</li>
 						<li><a href="catalog.html" class="ice-cream">Сливочное</a></li>
 						<li><a href="catalog2.html" class="ice-cream">Щербеты</a></li>
 						<li><a href="catalog3.html" class="ice-cream">Фруктовый лед</a></li>
@@ -23,16 +30,42 @@
 				<li><a href="delivery-payment.html">Доставка и оплата</a></li>
 				<li><a href="about-company.html">О Компании</a></li>
 			</ul>
-			<span class="search-indicator">
-			    <label for="search" class="visually-hidden">Поиск на сайте</label>
-			</span>
-			<input type="search" name="search" id="search" class="search">
+			<label for="search" class="visually-hidden">Поиск на сайте</label>
+			<p class="dropdown-search">
+				<input type="search" name="search" id="search" class="search">
+			</p>
 			<ul class="user-navigation">
-				<li><a class="login-link" href="login-link.html">Вход</a>
-				<li><a class="cart" href="cart.html">Пусто</a></li>
+				<li>
+					<a class="login-link" href="login-link.html">
+					    <span class="input">Вход</span>
+					</a>
+					<section class="popup-input">
+						<h2 class="visually-hidden">Пользовательский вход</h2>
+						<form action="echo.htmlacademy.ru" method="post" class="user">
+							<p class="user-item">
+					    		<label class="visually-hidden">Электронная почта
+						    		<input type="email" name="user-email" placeholder="Электронная почта">
+					    		</label>
+							</p>
+							<p class="user-item">
+					    		<label class="visually-hidden">Пароль
+						    		<input type="password" name="user-password" placeholder="Пароль">
+					   			 </label>
+							</p>
+							<button type="submit">Войти</button>
+							</form>	
+						<a href="password.html">Забыли пароль?</a>
+			    		<a href="check_in.html">Новая регистрация</a>
+					</section>
+				</li>
+				<li>
+					<a class="cart" href="cart.html">
+						<span class="basket">Пусто</span>
+					</a>
+				</li>
 			</ul>
 			<p>С 10 до 12, ежедневно</p>
-			<p class="tel">8 812 450-25-25</p>
+			<p>8 812 450-25-25</p>
 		</nav>
 	</header>
 	<main class="container">
@@ -75,29 +108,29 @@
 		<section class="product_cards">
 			<h2 class="visually-hidden">Карточки товаров</h2>
 			<div class="product" tabindex="0">
-				<h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+				<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
 			    <p>310<span class="ruble">руб.</span><span class="weight">/кг</span></p>
 			    <img src="img/orange_ice-cream.jpg" alt="Фото апельсиновой мороженки">
-			    <button type="button" class="product-hover">Быстрый просмотр</button>
 			</div>
+			<button type="button" class="product-hover">Быстрый просмотр</button>
 			<div class="product" tabindex="0">
-				<h3>Сливочно-кофейное с кусочками шоколада</h3>
+				<h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
 				<p>380<span class="ruble">руб.</span><span class="weight">/кг</span></p>
 			    <img src="img/coffee_ice-cream.jpg" alt="Фото кофейной мороженки">
-			    <button type="button" class="product-hover">Быстрый просмотр</button>
 			</div>
+			<button type="button" class="product-hover">Быстрый просмотр</button>
 			<div class="product" tabindex="0">
-				<h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+				<h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
 				<p>355<span class="ruble">руб.</span><span class="weight">/кг</span></p>
 			    <img src="img/strawberry_ice-cream.jpg" alt="Фото клубничной мороженки">
-			    <button type="button" class="product-hover">Быстрый просмотр</button>
 			</div>
+			<button type="button" class="product-hover">Быстрый просмотр</button>
 			<div class="product" tabindex="0">
-				<h3>Сливочное крем-брюле с карамельной подливкой</h3>
+				<h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
 				<p>415<span class="ruble">руб.</span><span class="weight">/кг</span></p>
 			    <img src="img/creme-brulee_ice-cream.jpg" alt="Фото мороженки крем-брюле">
-			    <button type="button" class="product-hover">Быстрый просмотр</button>
-			</div>	
+			</div>
+			<button type="button" class="product-hover">Быстрый просмотр</button>	
 		</section>
 		<section class="about_us">
 			<h2 class="visually-hidden">О нас</h2>
@@ -137,10 +170,10 @@
 				<img src="img/map.png" alt="Карта офиса по адресу улица Большая Конюшенная 19/8">
 				<div class="contacts">
 					<p>Адрес главного офиса и офлайн-магазина: <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b> Для заказов по телефону:<b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-					<button type="button">Форма обратной связи</button>
+					<button type="button" class="feedback">Форма обратной связи</button>
 				</div>		
 			</section>
-			<section class="popup_feedback">
+			<section class="popup-feedback">
 				<h2 class="visually-hidden">Форма обратной связи</h2>
 				<h3>Мы обязательно вам ответим!</h3>
 				<form action="echo.htmlacademy.ru" method="post" class="feedback">
@@ -166,24 +199,6 @@
 				<button type="button" class="modal-close">
 					<span class="visually-hidden">Закрыть форму обратной связи</span>
 				</button>
-			</section>
-			<section class="popup_input">
-				<h2 class="visually-hidden">Пользовательский вход</h2>
-				<form action="echo.htmlacademy.ru" method="post" class="user">
-					<p class="user-item">
-					    <label class="visually-hidden">Электронная почта
-						    <input type="email" name="user-email" placeholder="Электронная почта">
-					    </label>
-					</p>
-					<p class="user-item">
-					    <label class="visually-hidden">Пароль
-						    <input type="password" name="user-password" placeholder="Пароль">
-					    </label>
-					</p>
-					<button type="submit">Войти</button>
-				</form>	
-				<a href="password.html">Забыли пароль?</a>
-			    <a href="check_in.html">Новая регистрация</a>
 			</section>
 	</main>
 	<footer class="main-footer">

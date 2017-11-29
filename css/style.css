@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url("fonts/roboto-regular-webfont.woff2") format("woff2"),
+         url("fonts/roboto-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url("fonts/roboto-bold-webfont.woff2") format("woff2"),
+         url("fonts/roboto-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url("fonts/roboto-medium-webfont.woff2") format("woff2"),
+         url("fonts/roboto-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url("fonts/roboto-black-webfont.woff2") format("woff2"),
+         url("fonts/roboto-black-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url("fonts/roboto-light-webfont.woff2") format("woff2"),
+         url("fonts/roboto-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: none;
+
+    background-color: #849d8f;
+    background-image: url("backlight.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+.site-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+
+    background-color: #849d8f;
+}
+
+.user-navigation {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.main-navigation p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.main-navigation p:last-child {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.site-navigation,
+.dropdown-menu,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.dropdown-menu a,
+.user-navigation a {
+    color: #ffffff;
+}
+
+.dropdown-menu a,
+.user-navigation a {
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    outline: none;
+    color: #333333;
+    background-color: #f7f6f3;
+
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+    color: #323232;
+    background-color: #fbded7;
+}
+
+.dropdown-menu a:active{
+    background-color: #f6b5a5;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #323232;
+
+    background-color: #f8f7f4;
+}
+
