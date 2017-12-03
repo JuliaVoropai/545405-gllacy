@@ -125,9 +125,10 @@
 		</header>
 		<main>
 			<h1>Сливочное мороженое</h1>
-			<section class="product_filters">
+			<section class="product-filters">
 				<h2 class="visually-hidden">Фильтры товара</h2>
 				<form class="filters" method="get" action="echo.htmlacademy.ru">
+				<p>
 			    	<fieldset class="sort"> 
 						<legend>Сортировка:</legend>
 	                	<select name="filters-sorting" id="sorting">
@@ -143,44 +144,55 @@
                         	<div class="price-range-scale">
                        			<div class="price-range-scale-bar"></div>
                        		</div>
-                        	<div class="price-range-min" tabindex="0"><span class="visually-hidden"></span></div>
-                        	<div class="price-range-max" tabindex="0"><span class="visually-hidden"></span></div>
+                        	<div class="price-range-min" tabindex="0">
+                        		<span class="visually-hidden"></span>
+                        	</div>
+                        	<div class="price-range-max" tabindex="0">
+                        		<span class="visually-hidden"></span>
+                        	</div>
                     	</div>
                 	</fieldset>
                 	<fieldset class="fat">
                     	<legend>Жирность:</legend>
-            			<label>
-                			<input type="radio" name="fat" value="0%">0%
-            			</label>
-            			<label>
-                			<input type="radio" name="fat" value="<10%" checked>до 10%
-            			</label>
-            			<label>
-	            			<input type="radio" name="fat" value="<30%">до 30%
-	        			</label>
-	                	<label>
-	                    	<input type="radio" name="fat" value=">30%">выше 30%
-	                	</label>
+                    	<div class="fat-option">
+            				<label>
+                				<input type="radio" name="fat" value="0%">0%
+            				</label>
+            				<label>
+                				<input type="radio" name="fat" value="<10%" checked>до 10%
+            				</label>
+            				<label>
+	            				<input type="radio" name="fat" value="<30%">до 30%
+	        				</label>
+	                		<label>
+	                    		<input type="radio" name="fat" value=">30%">выше 30%
+	                		</label>
+	                    </div>
 	            	</fieldset>
+	            </p>
+	            <p>
 					<fieldset class="filler">
 						<legend>Наполнители:</legend>
-						<label>
-			    			<input type="checkbox" value="filler1" name="chocolate" checked> шоколадные
-						</label>
-						<label>
-			    			<input type="checkbox" value="filler2" name="sugar_flours" checked> сахарные присыпки
-						</label>
-						<label>
-			    			<input type="checkbox" value="filler3" name="fruit"> фрукты
-						</label>
-						<label>
-			    			<input type="checkbox" value="filler4" name="syrups"> сиропы
-						</label>
-						<label>
-			    			<input type="checkbox" value="filler5" name="jams"> джемы
-						</label>
+						<div class="filler-option">
+							<label>
+			    				<input type="checkbox" value="filler1" name="chocolate" checked> шоколадные
+							</label>
+							<label>
+			    				<input type="checkbox" value="filler2" name="sugar_flours" checked> сахарные присыпки
+							</label>
+							<label>
+			    				<input type="checkbox" value="filler3" name="fruit"> фрукты
+							</label>
+							<label>
+			    				<input type="checkbox" value="filler4" name="syrups"> сиропы
+							</label>
+							<label>
+			    				<input type="checkbox" value="filler5" name="jams"> джемы
+							</label>
+					    </div>
 					</fieldset>
 					<button type="submit">Применить</button>
+				</p>
 				</form>
 			</section>
 			<section class="product_cards">
@@ -281,16 +293,16 @@
 				<div class="product-hover-wrapper">
 				    <button type="button" class="button product-hover">Быстрый просмотр</button>
 			    </div>
-				<p class="paginator">
+			</section>
+			<div class="paginator">
         		    <a href="#prev"><span class="visually-hidden">Назад</span></a>
           			<a href="catalog.html">1</a>
         		   	<a href="catalog2.html">2</a>
         		   	<a href="catalog3.html">3</a>
        			    <a href="catalog4.html">4</a>
             		<a href="novelties.html">5</a>
-            		<a href="#next"><span class="visually-hidden">Вперёд"</span></a>
-        		</p>
-			</section>
+            		<a href="#next"><span class="visually-hidden">Вперёд</span></a>
+        		</div>
 		</main>
 		<footer class="main-footer">
 			<div class="footer-social">

@@ -27,6 +27,14 @@ body {
     background-position: top center;
 }
 
+.inner-page h1 {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff; 
+}
+
 a:not(.main-header-logo) {
     text-decoration: none;
     color: #ffffff;
@@ -132,8 +140,7 @@ a:not(.main-header-logo) {
 }
 
 .dropdown-menu a,
-.user-navigation a,
-.paginator a {
+.user-navigation a {
     text-decoration: none;
 }
 
@@ -276,7 +283,7 @@ a:not(.main-header-logo) {
 }
 
 .offer{
-
+    text-align: center;
 }
 
 .slide-radio p {
@@ -289,7 +296,7 @@ a:not(.main-header-logo) {
 }
 
 .slide-radio img{
-
+    text-align: center;
 }
 
 .slide-button {
@@ -342,7 +349,7 @@ a:not(.main-header-logo) {
     line-height: 22px;
     font-weight: 700;
     color: #ffffff;
-    text-align: ;
+    text-align: left;
 }
 
 .banner1 {
@@ -430,25 +437,6 @@ a:not(.main-header-logo) {
     color: #ffbc9e;
  }
 
-.paginator {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-.paginator:hover,
-.paginator:focus {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.paginator:active {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #323232;
-    background-color: #ffffff;
-}
 
 .about-us {
     width: 1146px;
@@ -601,10 +589,13 @@ a[href="##"] {
 }
 
 .main-footer {
+    width: 1066px;
+    height: 56px;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
     color: #ffffff;
+    text-align: center;
 }
 
 .footer-social ul {
@@ -614,10 +605,11 @@ a[href="##"] {
     font-weight: 400;
     color: #ffffff;
     background-color: #648673;
+    text-align: left;
 } 
 
 .footer-menu{
-
+    text-align: center;
 }
 
 .footer-menu ul {
@@ -625,7 +617,7 @@ a[href="##"] {
 }
 
 .menu-list {
-    column-count: 2;
+    text-align: center;
 }
 
 .menu-list li {
@@ -644,19 +636,26 @@ a[href="##"] {
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
+    text-align: left;
     color: #ffbc9e;
 }
 
-.made-in {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #ffffff;
+.main-footer .made-in {
+    text-align: right;
 }
 
 .made-in img { 
     width: 108px;
     height: 39px;
+    text-align: left;
+}
+
+.made-in p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #ffffff;
 }
 
 .made-in:last-of-type a {
@@ -828,4 +827,103 @@ a[href="##"] {
     text-align: left;
     box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
     border-radius: 16px/22px;
+}
+
+.product-filters fieldset {
+    border: none;
+}
+
+.product-filters legend {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+}
+
+.product-filters label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+}
+
+.sort select {
+    width: 194px;
+    height: 37px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff; 
+    background-color: rgba(248, 247, 244, 0.2);
+    border-radius: 18px;
+} 
+
+.sort select:focus,
+.sort select:hover,
+.sort select:active {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #323232; 
+    background-color: #ffffff;
+}
+
+.price .price-range {
+    width: 220px;
+    height: 37px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+}
+
+.fat .fat-option {
+    width: 415px;
+    height: 37px; 
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 18px;
+}
+
+/*.fat-option input {
+    background-image: url("../img/radio-off.svg");
+}
+
+.fat-opton input:checked {
+    background-image: url("../img/radio-on.svg");
+}
+*/
+.filler .filler-option {
+    width: 703px;
+    height: 37px;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 18px;
+}
+
+.product-filters button {
+    width: 144px;
+    height: 37px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.188);
+}
+
+.paginator {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500:;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.paginator a {
+    padding-right: 23px;
+    border: none;
 }
